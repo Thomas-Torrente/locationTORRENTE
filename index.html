@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- icon bootsrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <title>Location de voiture</title>
+
+    <!-- my css -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="bg-img-header">
+            <!-- nav -->
+            <nav>
+                <div class="collapse bg-white" id="navbarHeader">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-8 col-md-7 py-4">
+                                <p><a class="text-dark nav-link " href="#">Louer une voiture</a></p>
+                                <p><a class="text-dark nav-link " href="#">Louer un utilitaire</a></p>
+                                <p><a class="text-dark nav-link " href="#">Réserver un chauffeur</a></p>
+                                <p><a class="text-dark nav-link " href="#">Découvrez nos agences</a></p>
+                                <p><a class="text-dark nav-link " href="#">Mon compte</a></p>
+                                <p><a class="text-dark nav-link " href="#">Contact</a></p>
+                            </div>
+                            <div class="col-sm-4 offset-md-1 py-4">
+                                <h4 class="text-white">Contact</h4>
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                                    <li><a href="#" class="text-white">Like on Facebook</a></li>
+                                    <li><a href="#" class="text-white">Email me</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar navbar-dark bg-transparent shadow-sm">
+
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- text du header -->
+            <h1 class="text-white text-center">Bienvenue à bord</h1>
+            <h2 class="text-white text-center">Location de voiture 24h/24 et 7j/7</h2>
+
+
+            <!-- form de location => header -->
+
+            <form action="#" method="POST" class="row col-lg-6 col-12 bg-gris-transparent p-2 rounded mx-auto mt-5">
+                <div class="col-lg-3 col-md-4 col-12">
+                    <input class="form-control" list="datalistOptions" id="exampleDataList"
+                        placeholder="Adresse de départ">
+                    <datalist id="datalistOptions">
+                        <option value="10, rue du Terrage">
+                        <option value="144 Rue de Rennes
+    
+                        ">
+                        <option value="124 Rue Damremont
+                        ">
+                        <option value="6 Rue Saint-Severin
+                        ">
+                        <option value="52 Rue Damremont
+                        ">
+                    </datalist>
+                </div>
+                <div class="col-lg-3 col-md-4 ">
+                    <input class="col-12" type="date" id="debut" name="debut">
+                </div>
+                <div class="col-lg-3 col-md-4 ">
+                    <input class="col-12" type="date" id="fin" name="fin">
+                </div>
+                <div class="col-lg-3">
+                    <button type="submit" class="bg-vert-transparent p-2 border-none col-12">Valider ma
+                        recherche</button>
+                </div>
+
+            </form>
+
+        </div>
+
+
+
+    </header>
+
+    <!-- MAIN -->
+    <main class="container">
+        <!-- SECTION 1 result recherche -->
+        <section class="row">
+            <div class="col-lg-1">
+                <p class="p-1">7 résultats</p>
+            </div>
+        </section>
+
+        <!-- section 1 Peugeot 208 -->
+        <section class="row">
+
+            <div class="col-lg-4 col-6 mx-auto">
+                <!-- caroussel de la voiture -->
+
+                <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/vehicule1.png" class="d-block w-100 img-fluid"
+                                alt="La photo d'une Peugeot 208">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/vehicule1.png" class="d-block w-100 img-fluid"
+                                alt="La photo d'une Peugeot 208">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/vehicule1.png" class="d-block w-100 img-fluid"
+                                alt="La photo d'une Peugeot 208">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- model de la voiture + info -->
+            <div class="col-lg-4 col-6 mx-auto">
+                <div class="none-md-smt">
+                    <h3 class="mt-5">Peugeot 208</h3>
+                    <p>Diesel, 5 portes, GPS, Autoradio, Forfait 1000 km, (0,5/km supplémentaire)</p>
+                    <p>999 € - Agence de Paris
+                    </p>
+                </div>
+                <button class="btn btn-success">Réserver et payer</button>
+            </div>
+            <div class="col-lg-3">
+                <form action="#" method="POST">
+
+                    <div class="input-group none-md-smt mb-3">
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Triez par :</option>
+                            <option value="1">Prix décroissant</option>
+                            <option value="2">Prix Croissant</option>
+                        </select>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- section 2 Ford Focus -->
+
+        <section class="row">
+            <div class="col-lg-4 col-6 mx-auto">
+                <!-- caroussel de la voiture -->
+
+                <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/vehicule2.png" class="d-block w-100 img-fluid" alt="Une image de ford Focus">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/vehicule2.png" class="d-block w-100 img-fluid" alt="Une image de ford Focus">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/vehicule2.png" class="d-block w-100 img-fluid" alt="Une image de ford Focus">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- model de la voiture + info -->
+            <div class="col-lg-4 col-6 mx-auto">
+                <div class="none-md-smt">
+                    <h3 class="mt-5">Ford Focus</h3>
+                    <p>Diesel, 5 portes, GPS, Autoradio, Forfait 1000 km, (0,5/km supplémentaire)</p>
+                    <p>999 € - Agence de Paris
+                    </p>
+                </div>
+                <button class="btn btn-success">Réserver et payer</button>
+            </div>
+            <div class="col-lg-3"></div>
+
+        </section>
+        <!-- section 3 Audi A1 -->
+
+        <section class="row">
+            <div class="col-lg-4 col-6 mx-auto">
+                <!-- caroussel de la voiture -->
+
+                <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/vehicule3.png" class="d-block w-100 img-fluid" alt="Une image de Audi A1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/vehicule3.png" class="d-block w-100 img-fluid" alt="Une image de Audi A1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/vehicule3.png" class="d-block w-100 img-fluid" alt="Une image de Audi A1">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- model de la voiture + info -->
+            <div class="col-lg-4 col-6 mx-auto">
+                <div class="none-md-smt">
+                    <h3 class="mt-5">Audi A1</h3>
+                    <p>Diesel, 5 portes, GPS, Autoradio, Forfait 1000 km, (0,5/km supplémentaire)</p>
+                    <p>1100 € € - Agence de Paris
+                    </p>
+                </div>
+                <button class="btn btn-success">Réserver et payer</button>
+            </div>
+            <div class="col-lg-3"></div>
+
+        </section>
+        <!-- section 4 Opel Mokka -->
+        <section class="row">
+            <div class="col-lg-4 col-6 mx-auto ">
+                <!-- caroussel de la voiture -->
+
+                <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/vehicule4.png" class="d-block w-100 img-fluid" alt="Une image d'Opel Mokka">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/vehicule4.png" class="d-block w-100 img-fluid" alt="Une image d'opel Mokka">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/vehicule4.png" class="d-block w-100 img-fluid" alt="Une image d'opel Mokka">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- model de la voiture + info -->
+
+            <div class="col-lg-4 col-6 mx-auto ">
+                <div class="none-md-smt">
+                    <h3 class="mt-5">Opel Mokka</h3>
+                    <p>Diesel, 5 portes, GPS, Autoradio, Forfait 1000 km, (0,4/km supplémentaire)</p>
+                    <p>1150 € € - Agence de Paris
+                    </p>
+                </div>
+                <button class="btn btn-success">Réserver et payer</button>
+            </div>
+            <div class="col-lg-3"></div>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="mt-5 mx-auto">
+        <section class="row">
+            <!-- photo de l'agence -->
+            <div class="col-6">
+                <img class="img-fluid" src="img/agence.jpg" alt="L'image de notre agence">
+            </div>
+            <!-- adresse -->
+            <div class="col-6">
+                <address class="text-center"> Notre agence de Paris
+                    300, bd de Vaugirard - 75015 Paris
+                    Ouvert 7/7 de 9 h à à 20 h
+                    01 57 58 59 60 - contact@vtc.co</address>
+            </div>
+        </section>
+    </footer>
+
+
+    <!-- Fin du code + js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- mon js -->
+    <script src="js/caroussel_header.js"></script>
+</body>
+
+</html>
